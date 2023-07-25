@@ -12,11 +12,11 @@ public class MongoConfig extends AbstractMongoClientConfiguration {
 
     @Override
     protected String getDatabaseName() {
-        return "Test";
+        return "Testt";
     }
     @Override
     protected void configureClientSettings(MongoClientSettings.Builder builder) {
         // Configure MongoDB connection settings
-        builder.applyConnectionString(new ConnectionString("mongodb+srv://Alaeddine:lXuN8qb2jIYz7YXM@cluster0.4crzbau.mongodb.net/?retryWrites=true&w=majority"));
+        builder.applyConnectionString(new ConnectionString("mongodb://localhost:27017"));
     }
 }
